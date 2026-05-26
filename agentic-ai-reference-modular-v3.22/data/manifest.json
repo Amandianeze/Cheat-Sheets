@@ -1,0 +1,21 @@
+{
+  "source": "agentic-ai-projects-reference-v3.22.html",
+  "version": "3.22",
+  "last_reviewed": "2026-05-24",
+  "pages": [
+    "executive-brief.html",
+    "architecture-guide.html",
+    "tool-market-map.html",
+    "production-playbook.html",
+    "appendix.html",
+    "index.html",
+    "agentic-ai-projects-reference-v3.22.original.html"
+  ],
+  "split_logic": {
+    "executive-brief": "all material before Part I System Overview",
+    "architecture-guide": "Part I System Overview plus Part IV Decision Guides",
+    "tool-market-map": "Part II Market Map plus Part III Managed Platform Track",
+    "production-playbook": "Part V Production Playbook",
+    "appendix": "Part VI Appendix"
+  }
+}
