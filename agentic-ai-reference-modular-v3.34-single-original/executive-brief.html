@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Executive Brief — Agentic AI Reference v3.34</title>
+<meta content="3.34" name="doc-version"/><meta content="2026-05-31" name="last-reviewed"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600&amp;family=Syne:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="assets/base.css" rel="stylesheet"/></head>
+<body class="modular-page"><a id="top"></a><a class="skip-link" href="#main-content">Skip to content</a>
+<div class="container">
+<header><div class="header-label">// Modular Reference Document</div><h1>Executive Brief</h1><div class="header-meta"><span>v3.34</span> · May 2026 · Modularized from the full production reference</div></header>
+<div class="page-nav"><a href="index.html">Home</a><a href="executive-brief.html">Executive Brief</a><a href="architecture-guide.html">Architecture Guide</a><a href="tool-market-map.html">Tool / Market Map</a><a href="production-playbook.html">Production Playbook</a><a href="appendix.html">Appendix</a></div>
+<nav aria-label="Table of contents" class="toc"><div class="toc-header"><div class="toc-title">Table of Contents · v3.34 modular</div><a class="toc-top-button" href="#top">↑</a></div><div class="toc-link-list"><details class="toc-section"><summary><span class="toc-toggle"></span><span class="toc-part-title">Home</span></summary><div class="toc-link-list"><a href="index.html">Home</a></div></details><details class="toc-section" open=""><summary><span class="toc-toggle"></span><span class="toc-part-title">Executive Brief</span></summary><div class="toc-link-list"><a class="toc-h2" href="#production-reference-and-market-map-for-agentic-ai-systems">Production reference and market map for agentic AI systems</a><a class="toc-h2" href="#what-to-share-when-readers-only-have-five-minutes">What to share when readers only have five minutes</a><a class="toc-h2" href="#read-the-document-by-job-to-be-done">Read the document by job-to-be-done</a><a class="toc-h2" href="#use-the-reference-as-four-smaller-documents">Use the reference as four smaller documents</a><a class="toc-h2" href="#how-to-use-this-reference">How to use this reference</a><a class="toc-h2" href="#what-to-use-what-to-avoid-and-what-changed">What to use, what to avoid, and what changed</a><a class="toc-h3" href="#use-by-default">  ↳ Use by default</a><a class="toc-h3" href="#avoid-by-default">  ↳ Avoid by default</a><a class="toc-h3" href="#changed-in-v3-34">  ↳ Changed in v3.34</a><a class="toc-h2" href="#freshness-and-review-policy">Freshness and review policy</a><a class="toc-h2" href="#how-this-document-uses-key-terms">How this document uses key terms</a><a class="toc-h2" href="#five-recommended-starting-stacks">Five recommended starting stacks</a><a class="toc-h2" href="#separate-durable-architecture-from-volatile-market-claims">Separate durable architecture from volatile market claims</a><a class="toc-h2" href="#when-not-to-add-agentic-complexity">When not to add agentic complexity</a><a class="toc-h2" href="#for-ml-data-science-practitioners">For ML &amp; Data Science Practitioners</a></div></details><details class="toc-section"><summary><span class="toc-toggle"></span><span class="toc-part-title">Architecture Guide</span></summary><div class="toc-link-list"><a href="architecture-guide.html">Architecture Guide</a></div></details><details class="toc-section"><summary><span class="toc-toggle"></span><span class="toc-part-title">Tool / Market Map</span></summary><div class="toc-link-list"><a href="tool-market-map.html">Tool / Market Map</a></div></details><details class="toc-section"><summary><span class="toc-toggle"></span><span class="toc-part-title">Production Playbook</span></summary><div class="toc-link-list"><a href="production-playbook.html">Production Playbook</a></div></details><details class="toc-section"><summary><span class="toc-toggle"></span><span class="toc-part-title">Appendix</span></summary><div class="toc-link-list"><a href="appendix.html">Appendix</a></div></details></div></nav>
+<main id="main-content"><section class="doc-guide"><div class="section-label">// Reading path</div><h2>How to use this page</h2><p>Use this as the front door: executive summary, recommended stacks, terminology, and when not to add agentic complexity. Links in this page now route to the correct modular document.</p></section><section class="local-toc-box"><div class="local-toc-title">Page table of contents</div><div class="local-toc-grid"><div class="local-toc-group"><a href="#production-reference-and-market-map-for-agentic-ai-systems">Production reference and market map for agentic AI systems</a></div><div class="local-toc-group"><a href="#what-to-share-when-readers-only-have-five-minutes">What to share when readers only have five minutes</a></div><div class="local-toc-group"><a href="#read-the-document-by-job-to-be-done">Read the document by job-to-be-done</a></div><div class="local-toc-group"><a href="#use-the-reference-as-four-smaller-documents">Use the reference as four smaller documents</a></div><div class="local-toc-group"><a href="#how-to-use-this-reference">How to use this reference</a></div><div class="local-toc-group"><a href="#what-to-use-what-to-avoid-and-what-changed">What to use, what to avoid, and what changed</a><ul><li><a href="#use-by-default">Use by default</a></li><li><a href="#avoid-by-default">Avoid by default</a></li><li><a href="#changed-in-v3-34">Changed in v3.34</a></li></ul></div><div class="local-toc-group"><a href="#freshness-and-review-policy">Freshness and review policy</a></div><div class="local-toc-group"><a href="#how-this-document-uses-key-terms">How this document uses key terms</a></div><div class="local-toc-group"><a href="#five-recommended-starting-stacks">Five recommended starting stacks</a></div><div class="local-toc-group"><a href="#separate-durable-architecture-from-volatile-market-claims">Separate durable architecture from volatile market claims</a></div><div class="local-toc-group"><a href="#when-not-to-add-agentic-complexity">When not to add agentic complexity</a></div><div class="local-toc-group"><a href="#for-ml-data-science-practitioners">For ML &amp; Data Science Practitioners</a></div></div></section>
+<section class="exec-summary-v320" id="section-executive-summary-v320">
+<div class="exec-kicker">Start Here · One-page Executive Summary <span class="version-chip">v3.34</span></div>
+<h2 id="production-reference-and-market-map-for-agentic-ai-systems">Production reference and market map for agentic AI systems</h2>
+<p>This document is a practical field guide for designing, choosing, operating, and governing agentic AI systems. Use it to move from product intent to architecture choices, from architecture choices to implementation stacks, and from implementation stacks to production controls.</p>
+<div class="exec-summary-grid">
+<div class="exec-summary-card">
+<strong>Who should read what</strong>
+<div class="reader-routing">
+<div class="reader-route"><span>Executives</span>Read this summary, the brief version, production rules, and risk checklist.</div>
+<div class="reader-route"><span>Product leads</span>Start with product patterns, use-case decisions, and anti-patterns.</div>
+<div class="reader-route"><span>Engineers</span>Use the stack map, revised architecture, default stacks, state, tools, and deployment sections.</div>
+<div class="reader-route"><span>ML / DS teams</span>Focus on retrieval, evals, data quality, model gateways, and the ML/DS bridge.</div>
+<div class="reader-route"><span>Platform / security</span>Prioritize observability, identity, policy gates, audit trails, rollback, and freshness controls.</div>
+</div>
+</div>
+<div class="exec-summary-card">
+<strong>Top 10 production rules</strong>
+<ol>
+<li>Do not add agents where deterministic workflows are enough.</li>
+<li>Separate planning, execution, memory, retrieval, and evaluation.</li>
+<li>Treat tools as privileged interfaces with permissions and audit logs.</li>
+<li>Log decisions, tool calls, inputs, outputs, and failure paths.</li>
+<li>Version prompts, schemas, tools, embeddings, evals, and policies.</li>
+<li>Keep human approval on irreversible or high-risk actions.</li>
+<li>Make retrieval freshness and source provenance first-class controls.</li>
+<li>Design rollback, timeout, and graceful-degradation paths before launch.</li>
+<li>Measure task success and operational risk, not only model quality.</li>
+<li>Prefer small, inspectable loops over broad opaque autonomy.</li>
+</ol>
+</div>
+</div>
+</section>
+<section class="brief-panel brief-only" id="section-stakeholder-brief">
+<div class="brief-kicker">Compressed stakeholder brief</div>
+<h2 id="what-to-share-when-readers-only-have-five-minutes">What to share when readers only have five minutes</h2>
+<div class="brief-grid">
+<div class="brief-card"><strong>Default recommendation</strong>Start with the smallest reliable workflow, add retrieval and tools only where they improve task success, and add autonomy last.</div>
+<div class="brief-card"><strong>Core risk</strong>Agentic systems fail through poor tool boundaries, stale context, weak observability, and missing approval gates.</div>
+<div class="brief-card"><strong>Production minimum</strong>Every serious deployment needs evals, audit logs, rollback paths, identity controls, and freshness discipline.</div>
+<div class="brief-card"><strong>Decision lens</strong>Choose architecture by task risk, latency tolerance, human review needs, data freshness, and integration complexity.</div>
+</div>
+</section>
+<section aria-labelledby="reading-brief-title" class="reading-brief">
+<div class="reading-brief-title" id="reading-brief-title">Fastest way to use this reference</div>
+<div class="reading-brief-grid">
+<div class="reading-brief-card"><strong>30 minutes</strong>Read the Executive Summary, Start Here stacks, and Use-Case Decision Tree.</div>
+<div class="reading-brief-card"><strong>90 minutes</strong>Add the System Map, Data Substrate, Default Stack Recipes, and Production Launch Gates.</div>
+<div class="reading-brief-card"><strong>Deep review</strong>Use the Market Map only after choosing the layer you need to evaluate.</div>
+<div class="reading-brief-card"><strong>Maintenance rule</strong>Treat vendor/model details as volatile; review source links and freshness badges before decisions.</div>
+</div>
+</section>
+<section class="doc-guide" id="section-choose-your-path">
+<div class="section-label">// Choose your path</div>
+<h2 id="read-the-document-by-job-to-be-done" style="font-family:var(--sans); font-size:22px; margin-bottom:10px;">Read the document by job-to-be-done</h2>
+<p>Use this as a fast navigation layer when the full reference is more than you need. Each path points to the few sections that matter most for that build or review motion.</p>
+<div class="doc-guide-grid">
+<div class="reader-path"><strong>Building a RAG app</strong><a href="architecture-guide.html#section-data-substrate">Data substrate</a> → <a href="production-playbook.html#section-embedding-pipeline">embedding pipeline</a> → <a href="production-playbook.html#section-eval-engineering">evals</a> → <a href="production-playbook.html#section-agent-data-lineage">lineage</a>.</div>
+<div class="reader-path"><strong>Building a coding agent</strong><a href="production-playbook.html#section-agent-architecture-patterns">agent patterns</a> → <a href="production-playbook.html#section-tool-execution-safety">tool safety</a> → <a href="production-playbook.html#section-agent-testing-pyramid">testing pyramid</a> → <a href="production-playbook.html#section-failure-playbook">failure playbook</a>.</div>
+<div class="reader-path"><strong>Building an internal workflow agent</strong><a href="production-playbook.html#section-pattern-selection-matrix">pattern selection</a> → <a href="production-playbook.html#section-agent-identity-authz">identity</a> → <a href="production-playbook.html#section-hitl">HITL</a> → <a href="production-playbook.html#section-ownership-raci">RACI</a>.</div>
+<div class="reader-path"><strong>Doing security review</strong><a href="production-playbook.html#section-security-threat-model">threat model</a> → <a href="production-playbook.html#section-prompt-injection-defense">injection defense</a> → <a href="production-playbook.html#section-privacy-governance">privacy governance</a> → <a href="production-playbook.html#section-risk-register">risk register</a>.</div>
+<div class="reader-path"><strong>Choosing tools</strong><a href="tool-market-map.html#section-projects">market map</a> → <a href="architecture-guide.html#section-build-buy">build-vs-buy</a> → <a href="appendix.html#section-vendor-risk-procurement">vendor risk</a> → <a href="architecture-guide.html#section-decision-stacks">default stacks</a>.</div>
+<div class="reader-path"><strong>Productionizing an agent</strong><a href="production-playbook.html#section-launch-gates">launch gates</a> → <a href="production-playbook.html#section-latency-throughput">latency</a> → <a href="production-playbook.html#section-slo-examples">SLOs</a> → <a href="production-playbook.html#section-incident-templates">incident response</a>.</div>
+</div>
+</section>
+<section class="doc-guide" id="section-modular-reading-modes">
+<div class="section-label">// Modular reading modes</div>
+<h2 id="use-the-reference-as-four-smaller-documents" style="font-family:var(--sans); font-size:22px; margin-bottom:10px;">Use the reference as four smaller documents</h2>
+<p>When the full document is too much, split the reading path by audience and decision type. This keeps durable architecture guidance separate from fast-changing market choices.</p>
+<div class="module-path-grid">
+<div class="module-path-card"><span class="module-label">01</span><strong>Executive Brief</strong>Use the executive summary, top production rules, default stacks, build-vs-buy matrix, and launch readiness gates to align stakeholders before tool selection.</div>
+<div class="module-path-card"><span class="module-label">02</span><strong>Architecture Guide</strong>Use the revised agent stack, system map, data substrate, control-loop taxonomy, and canonical production architecture to design the system shape.</div>
+<div class="module-path-card"><span class="module-label">03</span><strong>Tool / Market Map</strong>Use the project catalog, comparisons, recommendation strength, and vendor-risk checklist only after the required layer and capability are clear.</div>
+<div class="module-path-card"><span class="module-label">04</span><strong>Production Playbook</strong>Use evals, security, identity, tool safety, memory governance, cost controls, SLOs, incident templates, and ownership/RACI to operate the system.</div>
+</div>
+</section>
+<section class="doc-guide" id="document-guide"><div class="section-label">// Document Guide</div><h2 id="how-to-use-this-reference" style="font-family:var(--sans); font-size:24px; line-height:1.15; margin-bottom:10px;">How to use this reference</h2><p style="font-size:12px; color:var(--body); line-height:1.75; max-width:800px;">This v3.34 update adds depth across graph databases and GraphRAG: decision table, construction pipeline, chunking strategies, hybrid retrieval patterns, schema design guidance, incremental update operations, cost model, Neptune Analytics clarification, Apache AGE caveats, and GraphRAG anti-patterns. Use it in four modes: first understand the durable architecture, then choose a tool layer from the market map, then validate the managed-platform path if relevant, and finally operate the stack through production gates, SLOs, security controls, incident playbooks, and freshness reviews.</p><div class="doc-guide-grid"><a class="reader-path" href="architecture-guide.html#part-overview" style="text-decoration:none; color:inherit;"><strong>New to the stack?</strong>Start with the system overview, maps, primitives, and complexity spectrum.</a><a class="reader-path" href="tool-market-map.html#part-catalog" style="text-decoration:none; color:inherit;"><strong>Choosing tools?</strong>Use the project catalog and decision guides.</a><a class="reader-path" href="tool-market-map.html#part-agentcore" style="text-decoration:none; color:inherit;"><strong>Using AWS?</strong>Review the AgentCore Platform Track for the managed route.</a><a class="reader-path" href="production-playbook.html#part-production" style="text-decoration:none; color:inherit;"><strong>Going to production?</strong>Use launch gates, SLOs, cost architecture, risk, and incident playbooks.</a></div></section><section class="exec-onepage full-only legacy-exec-summary" id="section-executive-summary">
+<div class="exec-kicker">Start Here · Executive Summary · v3.34</div>
+<h2 id="what-to-use-what-to-avoid-and-what-changed">What to use, what to avoid, and what changed</h2><div class="mini-section-toc"><strong>In this section</strong><a href="#use-by-default">Use by default</a><a href="#avoid-by-default">Avoid by default</a><a href="#changed-in-v3-34">Changed in v3.34</a></div>
+<p>This reference is split into two mental modes: <strong>Production Reference</strong> for durable system design, and <strong>Market Map</strong> for fast-changing tools, vendors, protocols, and model-provider choices. Start with the default architecture path, then consult the market map only when a concrete layer needs a product decision.</p>
+<div class="exec-pill-row"><span class="exec-pill reference">Durable reference</span><span class="exec-pill market">Volatile market map</span><span class="exec-pill production">Production-first</span></div>
+<div class="exec-grid">
+<div class="exec-card use"><h3 id="use-by-default">Use by default</h3><ul><li>RAG or workflow automation before autonomous agents.</li><li>A graph/runtime layer when tasks require state, branching, retries, or long-running execution.</li><li>Hybrid retrieval, explicit state, observability, evals, security boundaries, and launch gates.</li><li>A model gateway when routing, cost control, fallback, logging, or provider abstraction matters.</li></ul></div>
+<div class="exec-card avoid"><h3 id="avoid-by-default">Avoid by default</h3><ul><li>Agents without traces, evals, cost budgets, rollback paths, or human approval for high-impact actions.</li><li>Long-context prompting as a substitute for retrieval, permissions, and provenance.</li><li>Vendor lock-in before requirements stabilize.</li><li>Tool catalogs that do not separate default, strong, niche, watch, and deprecated-risk options.</li></ul></div>
+<div class="exec-card changed"><h3 id="changed-in-v3-34">Changed in v3.34</h3><ul><li>Added GraphRAG vs RAG decision table across 13 dimensions.</li><li>Added 6-stage graph knowledge construction pipeline with failure modes and tooling.</li><li>Added GraphRAG chunking guidance: entity boundary preservation, dual pipeline strategy.</li><li>Added three named hybrid retrieval patterns: entity-anchored, community summarization, path-constrained.</li><li>Added graph schema design guidance and GraphRAG cost model section.</li><li>Added incremental graph update operations table, Neptune Analytics clarification, Apache AGE maturity caveats, and 4 GraphRAG-specific anti-pattern cards.</li></ul></div>
+</div>
+</section><section class="maintenance-block" id="section-maintenance-block">
+<div class="exec-kicker">Maintenance</div>
+<h2 id="freshness-and-review-policy">Freshness and review policy</h2>
+<p>The stable architecture sections should age slowly; model/provider/tool claims should be treated as time-sensitive market information.</p>
+<div class="maintenance-meta"><span class="exec-pill production">Last reviewed: May 31, 2026</span><span class="exec-pill reference">Architecture: semiannual review</span><span class="exec-pill market">Market map: monthly/quarterly review</span></div>
+<div class="maintenance-grid">
+<div class="maintenance-card"><strong>Freshness policy</strong>Review production architecture, security, evals, and data governance semiannually. Review tool/vendor categories quarterly. Review model-provider, protocol, gateway, and managed-platform claims monthly when used for procurement or production decisions.</div>
+<div class="maintenance-card"><strong>Most likely to go stale</strong><ul><li>Model rankings, context windows, pricing, and latency claims</li><li>Vendor feature maturity and managed-platform coverage</li><li>Protocol adoption status and ecosystem support</li><li>Security/compliance positioning and certifications</li></ul></div>
+<div class="maintenance-card"><strong>Most durable</strong><ul><li>Control-loop and orchestration concepts</li><li>State vs memory distinctions</li><li>Retrieval, eval, observability, and launch-gate discipline</li><li>Anti-patterns and production-readiness criteria</li></ul></div>
+</div>
+<div class="v301-callout freshness-legend-v320">
+<strong>Freshness badge legend</strong><br/>
+<span class="freshness-badge freshness-stable">Stable</span> durable concept or architecture pattern ·
+  <span class="freshness-badge freshness-current">Current</span> recently reviewed tool or claim ·
+  <span class="freshness-badge freshness-watch">Watch</span> fast-moving or emerging area ·
+  <span class="freshness-badge freshness-audit">Audit</span> verify before production reliance.
+</div>
+</section><section class="quick-glossary" id="section-overloaded-terms-glossary">
+<div class="exec-kicker">Glossary · operational definitions</div>
+<h2 id="how-this-document-uses-key-terms">How this document uses key terms</h2>
+<p>These definitions are intentionally operational and alphabetized for lookup. They clarify terms that are often used inconsistently across agent, AI app, infrastructure, graph, retrieval, and ML tooling discussions.</p>
+<div class="quick-glossary-grid">
+<div class="quick-glossary-item"><strong>Agent</strong>A system that can choose actions over multiple steps using tools, state, memory, feedback, policies, and termination criteria.</div>
+<div class="quick-glossary-item"><strong>Apache AGE</strong>A PostgreSQL extension that adds graph database capabilities and Cypher-style graph querying inside a Postgres-centered stack.</div>
+<div class="quick-glossary-item"><strong>Cypher</strong>A declarative graph query language used heavily with Neo4j to match nodes, relationships, paths, and graph patterns.</div>
+<div class="quick-glossary-item"><strong>Databricks</strong>Enterprise lakehouse and AI platform used as a governed data, ML lifecycle, vector search, and evaluation backbone for agents; complements agent frameworks rather than replacing them.</div>
+<div class="quick-glossary-item"><strong>Entity Resolution</strong>The process of identifying when different names, aliases, records, or mentions refer to the same real-world entity.</div>
+<div class="quick-glossary-item"><strong>Evaluation</strong>Measurement of quality, reliability, safety, groundedness, cost, latency, and task success before and after release.</div>
+<div class="quick-glossary-item"><strong>Gateway</strong>A control layer between apps and model/tool providers for routing, policy, logging, fallback, cost control, and abstraction.</div>
+<div class="quick-glossary-item"><strong>Graph Database</strong>A database optimized for storing and querying entities and their relationships, especially when paths, neighborhoods, lineage, or multi-hop connections matter.</div>
+<div class="quick-glossary-item"><strong>Graph Traversal</strong>The act of moving across relationships in a graph to find connected entities, paths, dependencies, permissions, or evidence chains.</div>
+<div class="quick-glossary-item"><strong>GraphRAG</strong>A retrieval-augmented generation pattern that retrieves graph entities, relationships, paths, neighborhoods, communities, and provenance instead of only text chunks.</div>
+<div class="quick-glossary-item"><strong>Harness</strong>The developer-facing wrapper around prompts, tools, tests, state, policies, and runtime behavior.</div>
+<div class="quick-glossary-item"><strong>Knowledge Graph</strong>A structured graph of entities, relationships, facts, claims, metadata, and provenance used to support reasoning, retrieval, lineage, and explanation.</div>
+<div class="quick-glossary-item"><strong>Memory</strong>Information preserved across turns or sessions for personalization, continuity, preferences, learned user context, project history, or long-running task context.</div>
+<div class="quick-glossary-item"><strong>Multi-hop Retrieval</strong>Retrieval that requires more than one relationship or reasoning step, such as finding how two entities connect through intermediate documents, systems, people, or events.</div>
+<div class="quick-glossary-item"><strong>Neo4j</strong>A graph-native property graph database commonly used for knowledge graphs, GraphRAG, recommendations, entity relationship traversal, fraud/compliance graphs, and dependency analysis.</div>
+<div class="quick-glossary-item"><strong>Node / Relationship / Property</strong>Core property-graph concepts: nodes represent entities, relationships represent directed connections, and properties store attributes on either nodes or relationships.</div>
+<div class="quick-glossary-item"><strong>Orchestration</strong>The logic that decides what happens next: routing, branching, retries, delegation, tool use, approvals, and stopping.</div>
+<div class="quick-glossary-item"><strong>Property Graph</strong>A graph model where entities are represented as nodes, connections as relationships, and both can carry key-value properties.</div>
+<div class="quick-glossary-item"><strong>Protocol</strong>A shared interface standard that lets models, tools, agents, apps, or UIs interoperate.</div>
+<div class="quick-glossary-item"><strong>Provenance</strong>Traceable evidence about where data, claims, relationships, retrieved context, tool results, or generated outputs came from.</div>
+<div class="quick-glossary-item"><strong>Runtime</strong>The execution environment that manages steps, tool calls, retries, persistence, streaming, scheduling, and checkpointing.</div>
+<div class="quick-glossary-item"><strong>Snowflake</strong>Enterprise data cloud and AI platform used for governed SQL analytics, Cortex-powered text-to-SQL/search, internal data apps, and business-facing agent data access; complements orchestration frameworks rather than replacing them.</div>
+<div class="quick-glossary-item"><strong>State</strong>The explicit machine-readable representation of workflow progress, task variables, checkpoints, and execution context.</div>
+<div class="quick-glossary-item"><strong>Vector Index</strong>A searchable index over embedding vectors used to find semantically similar chunks, entities, nodes, documents, or relationships.</div>
+</div>
+</section><section class="doc-guide" id="section-start-here-default-stacks"><div class="section-label">// Start Here · Default Stack Recipes</div><h2 id="five-recommended-starting-stacks" style="font-family:var(--sans); font-size:24px; line-height:1.15; margin-bottom:10px;">Five recommended starting stacks</h2><p style="font-size:12px; color:var(--body); line-height:1.75; max-width:840px; margin-bottom:14px;">Use these as first-pass defaults before browsing the full catalog. Each recipe favors the smallest stack that can reach production safely; add autonomy, memory, multi-agent orchestration, or custom protocols only after the launch gates are measurable.</p><div class="quickstart-grid"><div class="quickstart-card"><span class="stack-recipe-label">Prototype chatbot</span><strong>Fast internal demo</strong>Streamlit or Next.js, one hosted frontier model, basic prompt templates, lightweight tracing, and a small golden set.<ul><li>Skip memory unless users return across sessions.</li><li>Keep tools read-only until evals exist.</li></ul></div><div class="quickstart-card"><span class="stack-recipe-label">Enterprise RAG</span><strong>Knowledge assistant</strong>Next.js or Streamlit, ACL-aware retrieval, citation-first responses, document ingestion pipeline, eval CI, and trace capture.<ul><li>Prioritize corpus quality and freshness.</li><li>Measure citation accuracy before adding actions.</li></ul></div><div class="quickstart-card"><span class="stack-recipe-label">Tool-using agent</span><strong>Bounded internal operator</strong>LangGraph or a durable workflow runtime, typed tool schemas, approval gates, state checkpointing, and rollback-safe actions.<ul><li>Start with narrow tasks and explicit stop conditions.</li><li>Use HITL for irreversible operations.</li></ul></div><div class="quickstart-card"><span class="stack-recipe-label">Regulated system</span><strong>High-assurance assistant</strong>Private retrieval, tenant-scoped data access, PII controls, policy-as-code, immutable audit logs, red-team evals, and formal launch gates.<ul><li>Default to least privilege.</li><li>Log decisions, sources, and user approvals.</li></ul></div><div class="quickstart-card"><span class="stack-recipe-label">AWS-native path</span><strong>Managed platform route</strong>Bedrock-hosted models, managed runtime/memory where appropriate, identity integration, observability, guardrails, and AWS-native deployment controls.<ul><li>Choose this when platform governance matters more than portability.</li><li>Document vendor assumptions and exit constraints.</li></ul></div></div></section><section class="doc-guide" id="section-source-maintenance-discipline"><div class="section-label">// Source &amp; Maintenance Discipline</div><h2 id="separate-durable-architecture-from-volatile-market-claims" style="font-family:var(--sans); font-size:24px; line-height:1.15; margin-bottom:10px;">Separate durable architecture from volatile market claims</h2><p style="font-size:12px; color:var(--body); line-height:1.75; max-width:840px; margin-bottom:12px;">The document mixes stable design patterns with fast-moving model, vendor, and protocol details. Treat architecture principles as durable, but require date-stamped source checks for model names, product capabilities, pricing, launch status, and managed-service features.</p><table class="maintenance-table"><thead><tr><th>Claim Type</th><th>Examples</th><th>Review Cadence</th><th>Evidence Required</th></tr></thead><tbody><tr><td>Stable pattern</td><td>Least privilege, eval gates, typed tools, HITL, durable checkpoints</td><td>Annual</td><td>Architecture review notes or internal standards</td></tr><tr><td>Current-market claim</td><td>Model families, tool availability, managed platform features</td><td>Monthly</td><td>Official docs, release notes, or dated vendor pages</td></tr><tr><td>Protocol detail</td><td>MCP, A2A, AG-UI, A2UI, MCP-UI semantics and adoption</td><td>Quarterly</td><td>Specification link, version, and date checked</td></tr><tr><td>Risk / compliance claim</td><td>Data handling, auditability, region support, policy controls</td><td>Before launch and after material changes</td><td>Security review, legal review, or compliance evidence</td></tr></tbody></table><div class="v301-callout" style="margin-top:16px;"><strong style="color:var(--text);">Maintenance rule:</strong> every volatile claim should carry a source URL, owner, and “last checked” date in the canonical version of this reference. If a claim is not source-linked, downgrade it from recommendation to research note.</div></section><section class="doc-guide" id="section-agentic-ai-anti-patterns"><div class="section-label">// Anti-Patterns</div><h2 id="when-not-to-add-agentic-complexity" style="font-family:var(--sans); font-size:24px; line-height:1.15; margin-bottom:10px;">When not to add agentic complexity</h2><p style="font-size:12px; color:var(--body); line-height:1.75; max-width:840px;">Use this section as a brake. Most production failures come from adding autonomy before the system has observability, evaluation, access control, rollback, and clear user value.</p><div class="anti-pattern-grid"><div class="anti-pattern-card"><strong>Do not use agents when a workflow is deterministic.</strong><em>Prefer:</em> rules, queues, cron jobs, SQL, or standard workflow orchestration when the task does not require reasoning or ambiguity handling.</div><div class="anti-pattern-card"><strong>Do not add memory before you know what should persist.</strong><em>Prefer:</em> explicit user profiles, scoped preferences, and auditable state before implicit long-term memory.</div><div class="anti-pattern-card"><strong>Do not add multi-agent orchestration to fix unclear requirements.</strong><em>Prefer:</em> one reliable agent with a narrow objective, clear tool contracts, and measurable success criteria.</div><div class="anti-pattern-card"><strong>Do not use RAG as a substitute for content governance.</strong><em>Prefer:</em> curated corpora, ACL-aware indexing, deduplication, freshness metadata, and citation evaluation.</div><div class="anti-pattern-card"><strong>Do not give write tools to unmeasured systems.</strong><em>Prefer:</em> read-only tools, sandbox writes, dry runs, approvals, and rollback plans until evals and monitoring pass.</div><div class="anti-pattern-card"><strong>Do not optimize model choice before measuring task quality.</strong><em>Prefer:</em> a small golden dataset, task-specific evals, latency/cost traces, and side-by-side model regression tests.</div></div></section>
+<section class="bridge-section" id="section-ml-ds-bridge">
+<div class="bridge-header">
+<div class="bridge-header-icon">🔬</div>
+<div>
+<h2 class="bridge-header-title" id="for-ml-data-science-practitioners">For ML &amp; Data Science Practitioners</h2>
+<div class="bridge-header-sub">How your existing skills map to the agentic AI stack — and what's genuinely new</div>
+</div>
+</div>
+<div class="bridge-body">
+<p class="bridge-intro">If you know machine learning or data science, you already understand more of this stack than you think. Agentic AI is not a replacement for ML — it's inference-time compute applied to goals rather than tokens. This section maps concepts you know to concepts in this document, so you can navigate the rest of it with confidence.</p>
+<div style="font-family:var(--sans); font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); margin-bottom:12px;">// Concept mapping: what you know → what this document calls it</div>
+<div class="bridge-grid">
+<div class="bridge-card">
+<div class="bridge-card-label">Memory</div>
+<div class="bridge-card-eq">
+<span class="bridge-card-from">Context window</span>
+<span class="bridge-card-arrow">≈</span>
+<span class="bridge-card-to">Working memory / RAM</span>
+</div>
+<div class="bridge-card-body">An LLM's context window is finite (~200k tokens) — everything the model can "see" right now. When it fills, you need external memory (Mem0) or retrieval (RAG). This is why vector stores exist: they extend context beyond what fits in the window.</div>
+</div>
+<div class="bridge-card">
+<div class="bridge-card-label">Retrieval</div>
+<div class="bridge-card-eq">
+<span class="bridge-card-from">RAG</span>
+<span class="bridge-card-arrow">≈</span>
+<span class="bridge-card-to">Retrieval-augmented inference</span>
+</div>
+<div class="bridge-card-body">RAG (Retrieval-Augmented Generation) is retrieval-augmented inference: instead of embedding all knowledge in model weights, you retrieve relevant documents at inference time and inject them into context. You already know embedding models and nearest-neighbor search — those are the DS-familiar pieces of the RAG stack.</div>
+</div>
+<div class="bridge-card">
+<div class="bridge-card-label">Control loops</div>
+<div class="bridge-card-eq">
+<span class="bridge-card-from">ReAct / MCTS / Beam Search</span>
+<span class="bridge-card-arrow">≈</span>
+<span class="bridge-card-to">Inference-time search</span>
+</div>
+<div class="bridge-card-body">Control loops are search algorithms run at inference time over goals rather than tokens. ReAct is a greedy search loop. Tree-of-Thought branches and prunes. MCTS (Monte Carlo Tree Search) — which you may know from AlphaGo — is the same algorithm applied to reasoning traces rather than game boards.</div>
+</div>
+<div class="bridge-card">
+<div class="bridge-card-label">Evaluation</div>
+<div class="bridge-card-eq">
+<span class="bridge-card-from">Agent eval</span>
+<span class="bridge-card-arrow">≈</span>
+<span class="bridge-card-to">Online experiment design</span>
+</div>
+<div class="bridge-card-body">Agent evaluation is closer to online A/B testing of decision policies than offline model benchmarking. Instead of comparing predictions vs. ground truth, you compare trajectories — did the agent take the right sequence of actions? Golden datasets here are (input, expected trajectory) pairs rather than (input, label) pairs.</div>
+</div>
+<div class="bridge-card">
+<div class="bridge-card-label">Observability</div>
+<div class="bridge-card-eq">
+<span class="bridge-card-from">MLflow / experiment tracking</span>
+<span class="bridge-card-arrow">≈</span>
+<span class="bridge-card-to">Langfuse / LangSmith traces</span>
+</div>
+<div class="bridge-card-body">You know MLflow for experiment tracking. Langfuse and LangSmith are its agentic equivalent — they trace not just model calls but tool invocations, context assembly, retrieval results, and token costs across every step of a run. Same concept, more dimensions.</div>
+</div>
+<div class="bridge-card">
+<div class="bridge-card-label">Features vs. context</div>
+<div class="bridge-card-eq">
+<span class="bridge-card-from">Feature store</span>
+<span class="bridge-card-arrow">≈</span>
+<span class="bridge-card-to">Context + retrieval layer</span>
+</div>
+<div class="bridge-card-body">In traditional ML, a feature store serves engineered features to a model at serving time. In agentic AI, the retrieval layer plus in-context injection serves the same function — assembling the right facts into context before inference. The "features" are now retrieved passages, structured records, and tool outputs rather than numerical vectors.</div>
+</div>
+</div>
+<div style="font-family:var(--sans); font-size:12px; letter-spacing:0.15em; text-transform:uppercase; color:var(--muted); margin-bottom:12px; margin-top:8px;">// Traditional ML vs. agentic AI — a quick comparison</div>
+<div class="section-tldr">
+<div class="section-tldr-label">TL;DR before this long table</div>
+<ul>
+<li>Use this table to compare tradeoffs quickly; start with the default or mature option before adopting specialized alternatives.</li>
+<li>Check the freshness badge or review date for market/vendor claims before making a production decision.</li>
+<li>For high-risk systems, require observability, access control, evaluation coverage, and rollback before launch.</li>
+</ul>
+</div>
+<table class="bridge-ds-table">
+<thead><tr><th>Dimension</th><th>Traditional ML / DS</th><th>Agentic AI</th></tr></thead>
+<tbody>
+<tr><td>Core loop</td><td>Train → deploy → predict (batch or online)</td><td>Prompt → think → act → observe → repeat until done</td></tr>
+<tr><td>Inference</td><td>Single forward pass, fixed output</td><td>Multi-step, tool-augmented, adaptive</td></tr>
+<tr><td>Knowledge</td><td>Encoded in model weights at training time</td><td>Retrieved from external stores at inference time (RAG)</td></tr>
+<tr><td>Evaluation</td><td>Offline metrics: accuracy, F1, AUC on held-out set</td><td>Trajectory quality, tool-call accuracy, golden datasets, human review</td></tr>
+<tr><td>Deployment</td><td>Model artifact + serving infra + feature pipeline</td><td>Model + harness + tools + memory + retrieval + observability</td></tr>
+<tr><td>Drift</td><td>Data drift, concept drift, model degradation</td><td>Prompt drift, retrieval staleness, tool contract changes, model version changes</td></tr>
+<tr><td>Your role</td><td>Build models, tune hyperparameters, feature engineer</td><td>Design agents, curate retrieval corpora, build eval sets, tune context</td></tr>
+</tbody>
+</table>
+<div class="bridge-transfer-grid">
+<div class="bridge-transfer-card yours">
+<div class="bridge-transfer-title">✓ Skills that transfer directly</div>
+<ul class="bridge-transfer-list">
+<li>Embedding models (the RAG retrieval foundation)</li>
+<li>Re-rankers and cross-encoders (retrieval quality)</li>
+<li>Chunking strategies (context quality for RAG)</li>
+<li>Precision/recall thinking (retrieval evaluation)</li>
+<li>Experiment design and A/B testing (agent eval)</li>
+<li>Feature store patterns (context assembly design)</li>
+<li>Monitoring and drift detection (observability)</li>
+<li>Fine-tuning domain models (task-specific performance)</li>
+</ul>
+</div>
+<div class="bridge-transfer-card">
+<div class="bridge-transfer-title">→ New concepts to learn</div>
+<ul class="bridge-transfer-list">
+<li class="new">Context window management (working memory limits)</li>
+<li class="new">Tool schemas and MCP (how agents call external APIs)</li>
+<li class="new">Control loops (ReAct, Plan–Execute–Reflect)</li>
+<li class="new">Prompt engineering and system prompts</li>
+<li class="new">Trajectory evaluation (did the agent choose the right steps?)</li>
+<li class="new">HITL patterns (human-in-the-loop approval gates)</li>
+<li class="new">Guardrails and policy enforcement</li>
+<li class="new">Agent harnesses (Claude Code, LangGraph runtimes)</li>
+</ul>
+</div>
+</div>
+<div style="margin-top:18px; padding:14px 18px; border:1px solid rgba(0,155,124,0.22); border-radius:8px; background:rgba(0,155,124,0.03); font-family:var(--sans); font-size:12.5px; color:#4a4a62; line-height:1.75;">
+<strong style="color:var(--text);">The key insight:</strong> In traditional ML, your job is to build a model that encodes knowledge at training time and produces predictions at serving time. In agentic AI, your job is to build a system that assembles knowledge at inference time, decides what actions to take, and improves from feedback over time. Your embedding models, retrieval skills, and evaluation instincts are load-bearing in the agentic stack — they're not obsolete, they're promoted.
+    </div>
+</div>
+</section>
+</main>
+<footer><div>Agentic AI Reference · Modular v3.34</div><div class="footer-count">Generated from v3.34</div></footer>
+</div><script src="assets/modular.js"></script></body></html>

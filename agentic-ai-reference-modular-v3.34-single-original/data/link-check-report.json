@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "missing_local_links": 0,
+  "removed_duplicate_original": "agentic-ai-reference-v3.34.original.html",
+  "kept_original": "agentic-ai-reference-v3.34.html",
+  "notes": [
+    "Removed duplicate preserved source copy.",
+    "Updated index.html and appendix.html to point to the single retained full original document.",
+    "Revalidated local links after cleanup."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "version": "3.34",
+  "source": "agentic-ai-reference-v3.34.html",
+  "pages": [
+    {
+      "file": "index.html",
+      "title": "Home"
+    },
+    {
+      "file": "executive-brief.html",
+      "title": "Executive Brief"
+    },
+    {
+      "file": "architecture-guide.html",
+      "title": "Architecture Guide"
+    },
+    {
+      "file": "tool-market-map.html",
+      "title": "Tool / Market Map"
+    },
+    {
+      "file": "production-playbook.html",
+      "title": "Production Playbook"
+    },
+    {
+      "file": "appendix.html",
+      "title": "Appendix"
+    }
+  ],
+  "notes": "Rebuilt from v3.34 full reference using the v3.22 modular package structure; each content page includes a page table of contents and mini section TOCs."
+}
